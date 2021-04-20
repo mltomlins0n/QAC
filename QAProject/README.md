@@ -51,13 +51,13 @@ Static reporting was performed using Codacy, the results of which can be viewed 
   * Codacy
   * Google Cloud Platform
   
-![tech_used](/Docs/techUsed.png)
+![tech_used](./Docs/techUsed.png)
 
 <a name="frontend"></a>
 ## Front End
 ### Wireframes
 ### Drivers Page
-![drivers wireframe](/Docs/DriversPage.png)
+![drivers wireframe](./Docs/DriversPage.png)
 ### Constructors Page
-![constructors wireframe](/Docs/ConstructorsPage.png)
+![constructors wireframe](./Docs/ConstructorsPage.png)
 
