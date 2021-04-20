@@ -1,0 +1,18 @@
+# QA Notes
+spellright.dict
+settings.json
+
+# DevOps
+venv
+*.pyc
+__pycache__
+.idea
+*.iml
+
+# QA Project
+.idea
+*.drawio
+*.pdf
+
+# QA Project Selenium
+target
