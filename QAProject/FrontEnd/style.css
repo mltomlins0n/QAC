@@ -1,0 +1,17 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+
+.display-4 {
+    font-weight: 400;
+}
+
+#navButtons {
+    margin-top: 1.5em;
+}
+
+#tableButtons button{
+    margin: 0.2em;
+    margin-bottom: 1em;
+}

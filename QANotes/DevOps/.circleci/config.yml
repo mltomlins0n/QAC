@@ -1,0 +1,70 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
+      - image: circleci/python:3.6.1
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "50:dd:56:14:58:18:50:b3:cd:b1:a5:ef:f0:58:1a:64"
+
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "pip_dependencies" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run:
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r pip_dependencies
+      - run:
+          name: Generate Topic Module Links
+          command: ./automation/modules.py
+      - run:
+          name: Generate Table of Contents for README Files
+          command: ./automation/toc.py
+      - run:
+          name: Create Topics List of Links
+          command: ./automation/topics.py
+      - run:
+          name: Create Module Links for Courses
+          command: ./automation/course.py
+      - run:
+          name: Create State
+          command: ./automation/state.py > state.json
+      - run:
+          name: Push Changes Made from Scripts
+          command: |
+            git status
+            git config user.name "Circle CI"
+            git config user.email "N/A"
+            git add .
+            if git commit -m "circle ci - document formatting [ci skip]"; then
+              git push -u origin $(git branch | grep \* | cut -d ' ' -f2)
+            else
+              echo "nothing has been changed after running the scripts, cancelling push"
+            fi
+      - save_cache:
+          paths:
+            - ./venv
+          key: v1-dependencies-{{ checksum "pip_dependencies" }}
+
