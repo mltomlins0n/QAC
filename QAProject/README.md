@@ -20,7 +20,7 @@ The project required that that the following be included as the MVP (Minimum Via
   * A relational database with at least 2 tables.
   * A functional OOP application wiritten in Java including a functining front end website and integrated API's.
   * Test suites with automated testing. Backend tests must have 80% coverage and provide consistent reports.
-  * Intergration into a Version Control System (Git) which will be built through a CI server (Jenkins) and deployed     using a cloud provider (GCP).
+  * Intergration into a Version Control System (Git) which will be built through a CI server (Jenkins) and deployed using a cloud provider (GCP).
 
 ## Solution
 My solution was to create an application that displays the current Driver's and Constructor's standings for the current Formula 1 season.  
@@ -60,4 +60,3 @@ Static reporting was performed using Codacy, the results of which can be viewed 
 ![drivers wireframe](./Docs/DriversPage.png)
 ### Constructors Page
 ![constructors wireframe](./Docs/ConstructorsPage.png)
-
