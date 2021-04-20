@@ -1,0 +1,130 @@
+body {
+    background-color: silver;
+}
+
+main {
+    background-color: indigo;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.2,0.2);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.2,0.2);
+    }
+}
+
+#banner {
+    margin: auto;
+    margin-bottom: 1em;
+    letter-spacing: 3em;
+    font-size: 2em;
+    color: white;
+    background-color: goldenrod;
+    width: auto;
+    height: 5em;
+    text-align: center;
+    padding: 0.5em;
+    border-top: 0.2em solid black;
+    border-bottom: 0.1em dashed black;
+}
+
+#stupidButton {
+     /* border: 0.2em solid black; */
+    width: 900px;
+    margin: auto;
+    margin-top: 1em;
+    /* 0.0001s = epilepsy mode  */
+    animation: zoom 2s infinite linear;
+    block-size: 5em; 
+    font-size: 5em; 
+    border: 10px solid red; 
+    background-color: lime;
+    display: flex;
+}
+
+#stupidButton:hover {
+    animation: zoom 0.0001s infinite linear;
+    background-color: red;
+    border-color: lime;
+    color: white;
+}
+
+#uselessInput{
+    width: 20em;
+     margin: auto; 
+     margin-bottom: 0.5em;
+    border: 0.2em solid black;
+    height: 1.5em;
+    border-radius: 1em; 
+    text-indent: 0.5em; 
+    display: flex;
+}
+
+#number {
+    font-size: 10em;
+    width: 400px;
+    border: 0.05em solid black;
+    text-align: center;
+    margin: auto;
+}
+
+#container {
+     /* border: 0.5em solid red; */
+     width: 650px;
+     margin: auto;
+     text-align: center;
+}
+
+#history {
+     border: 0.2em solid black; 
+}
+
+.numButton {
+    /* border: 0.15em solid goldenrod; */
+    margin: 0.5em; 
+    padding: 0.5em;
+    width: 100px;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 1em;
+    background-color: black;
+    color: white;
+}
+
+h1, h3, p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#bio {
+     border-top: 0.1em dashed goldenrod; 
+     border-bottom: 0.1em dashed goldenrod; 
+     padding-inline-start: 1em;
+     color: white;
+     font-family: comic sans MS;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1em;
+}
+
+#dob {
+    font-family: Cambria;
+}
+
+form {
+    border: 0.2em dotted black;
+    width: 300px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    font-family: Cambria, sans-serif;
+}

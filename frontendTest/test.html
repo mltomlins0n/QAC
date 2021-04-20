@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+<html>
+    <head>
+        <title>This Page</title>
+        <link rel = 'stylesheet'
+            type = 'text/css'
+            href = 'test.css' />
+            <link rel='stylesheet' 
+                  href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' 
+                  integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' 
+                  crossorigin='anonymous'>
+    </head>
+        <body>
+            <section id='banner'>
+                    <h1>BANNER</h1>
+            </section>
+            <main>
+                 <section id='bio'>
+                    <h1>Bio</h1>
+                    <h3>Name</h3>
+                    <p class='name'>Martin Tomlinson</p>
+                    <h3>D.O.B</h3>
+                    <p id='dob'>07.08.1991</p>
+                </section> 
+            </main>
+            <section>
+                <button id='stupidButton' onclick='handleClick(this)'>SMASH THIS BUTTON</button>
+            </section>
+            <section>
+                <input id='uselessInput' placeholder='This does nothing'> 
+            </section>
+            <section id='container'></section>
+            <section id='history'></section>
+
+            <form id='myForm' onsubmit='return handleFormSubmit(this)'>
+                <div id='bs-alert' class='alert alert-primary' role='alert'>
+                    Who's this?
+                </div>
+                <p>First Name</p>
+                <input id='firstName' type='text' class='form-control' onfocusout='handleChange(this)'>
+                <p>Last Name</p>
+                <input id='lastName' type='text' class='form-control'>
+                <p>Date of Birth</p>
+                <input id='dob' type='date' class='form-control'>
+                <p>Email</p>
+                <input id='email' type='email' class='form-control'>
+                <p>Password</p>
+                <input id='stolenPassword' type='password' class='form-control' onkeypress='handleEvent(this)'>
+                <button class='btn btn-outline-dark btn-block'>Submit</button>
+            </form>
+
+            <button onclick='handleClick()'>Go elsewhere</button>
+
+            <!-- <button type='button' class='btn btn-outline-primary'>Primary</button>
+            <button type='button' class='btn btn-outline-secondary'>Secondary</button>
+            <button type='button' class='btn btn-outline-success'>Success</button>
+            <button type='button' class='btn btn-outline-danger'>Danger</button>
+            <button type='button' class='btn btn-outline-warning'>Warning</button>
+            <button type='button' class='btn btn-outline-info'>Info</button>
+            <button type='button' class='btn btn-outline-light'>Light</button>
+            <button type='button' class='btn btn-outline-dark'>Dark</button> -->
+
+            <script src='test.js'></script>
+            <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+            <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+        </body>  

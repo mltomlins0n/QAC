@@ -1,0 +1,49 @@
+h1 {
+    /* border: 2px solid goldenrod; */
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 3em;
+    width: 9em;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+#details {
+    border-top: 0.2em solid goldenrod;
+    border-bottom: 0.2em solid goldenrod;
+    margin: auto;
+    margin-bottom: 0.5em;
+    text-align: center; 
+    width: 80%;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+#membersHeading {
+    text-align: center;
+}
+
+#details p, li{
+    display: inline-block;
+    padding: 0.2em; 
+    font-size: 1.5em;
+}
+
+#memberSection {
+    /* border: 2px solid goldenrod;  */
+    margin: auto;
+    display: flex;
+}
+
+#memberSection div {
+     border: 0.4em solid goldenrod; 
+     border-radius: 2em;
+     margin: 2em;
+     width: 60%;
+     padding: 1em;
+     background-color: indigo;
+     text-align: center;
+     color: white;
+}
+
+#memberSection div h2, h3{
+    text-align: left;
+}

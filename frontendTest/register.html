@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <main>
+        <form id='myForm' onsubmit='return handleFormSubmit(this)'>
+            <label>Register</label>
+            <p>First Name</p>
+            <input id='firstName' type='text'>
+            <p>Last Name</p>
+            <input id='lastName' type='text'>
+            <p>Email</p>
+            <input id='email' type='email'>
+            <p>Username</p>
+            <input id='username' type='text'>
+            <p>Password</p>
+            <input id='password' type='password'>
+            <button>Submit</button>
+        </form>
+        <button onclick='return handleClick(this)'>Existing User Login</button>
+    </main>
+    <script src='register.js'></script>
+</body>
+
+</html>
