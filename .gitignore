@@ -15,4 +15,11 @@ __pycache__
 *.pdf
 
 # QA Project Selenium
-target
+target/
+
+# Eclipse Workspace
+bin/
+.vscode
+.settings
+.classpath
+.project
